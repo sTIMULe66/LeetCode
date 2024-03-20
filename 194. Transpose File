@@ -1,0 +1,1 @@
+[ -f file.txt ] && col=$(head -n 1 file.txt | wc -w)  && for(( i=0; i<$col; i++ )) do (awk -v num=$i '{ print $( 1+num )}' file.txt | xargs) done
