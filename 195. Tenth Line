@@ -1,0 +1,1 @@
+[ -f file.txt ] && sed '10!d' file.txt
